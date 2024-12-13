@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+:root {
+  --app-light-blue: #a0c5ff;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.alignment {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
