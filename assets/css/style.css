@@ -55,6 +55,11 @@ header {
   width: 100%;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
   padding: 10px 20px 12px 20px;
   height: 100%;
