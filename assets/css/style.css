@@ -243,3 +243,18 @@ ul {
 .contacts {
   margin-top: 0px;
 }
+
+/* Footer */
+footer{
+  background-color: #141414;
+
+  h2 {  
+    font-size: 27px;
+    color: var(--app-light-blue);
+    font-family: "Berkshire Swash", sans-serif;
+  }
+
+  p {
+    color: var(--app-white);
+  }
+}
