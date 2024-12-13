@@ -88,12 +88,13 @@ ul {
   }
 }
 
-.profile-area {
+/* Profile and Contact area */
+.left-side-tab {
   max-width: 200px;
-  border-radius: 5px 5px 0 0;
   padding: 10px;
   margin: 25px 0 0 0;
   height: 770px;
+
   h2 {
     font-size: 20px;
     font-weight: 540;
@@ -101,9 +102,16 @@ ul {
   }
 }
 
+.section-box {
+  background-color: var(--app-white);
+  border-radius: 5px;
+}
+
+
 .profile-area-head {
   width: 200px;
   margin: auto;
+
   img {
     width: 40px;
     height: 40px;
@@ -115,6 +123,8 @@ ul {
   }
 }
 
+.contact-section {
+}
 .post-area {
   width: 550px;
   height: 80px;
