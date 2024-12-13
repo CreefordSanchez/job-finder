@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url(./data/utility.css);
-
+@import url(./data/reset.css);
 /*------------------------*/
 /* Base Rules             */
 /*------------------------*/
@@ -90,8 +90,7 @@ ul {
 
 /* Profile and Contact area */
 .left-side-tab {
-  max-width: 200px;
-  padding: 10px;
+  width: 225px;
   margin: 25px 0 0 0;
   height: 770px;
 
@@ -103,16 +102,15 @@ ul {
 
 .section-box {
   background-color: var(--app-white);
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 100%;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .profile {
   position: relative;
-
-  h2 {
-    padding-left: 5px;
-  }
+  padding-bottom: 20px;
 }
 
 .profile-banner {
@@ -126,8 +124,8 @@ ul {
 
 .profile-pic {
   position: absolute;
-  top: 20px;
-  left: 5px;
+  top: 25px;
+  left: 10px;
   height: 62px;
   width: 62px;
   border-radius: 31px;
@@ -143,18 +141,13 @@ ul {
   height: 100%;
   border-radius: 31px;
 }
-.profile-area-head {
-  width: 200px;
-  margin: auto;
 
-  img {
-    width: 40px;
-    height: 40px;
-    margin: 20px 0px 0px 5px;
-    padding: 0px;
-    border-radius: 50px;
-    border: 2px solid black;
-    background-color: #f0f0f0;
+.profile-description {
+  padding: 0 10px;
+
+  p {
+    font-size: 12px;
+    margin-top: 3px;
   }
 }
 
@@ -165,6 +158,7 @@ ul {
   padding: 10px;
   margin: 25px;
   border-radius: 5px;
+
   img {
     height: 20px;
     width: 20px;
@@ -179,8 +173,8 @@ ul {
 }
 
 .add-post-text {
-  height: 20px;
-  width: 90%;
+  height: 38px;
+  width: 513px;
   padding: 8px;
   border-radius: 5px;
   resize: none;
@@ -214,7 +208,7 @@ ul {
 
   img {
     margin-top: 10px;
-    width: 90%;
+    width: 37px;
     height: auto;
     border-radius: 5px;
   }
