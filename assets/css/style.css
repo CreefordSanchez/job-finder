@@ -156,3 +156,9 @@ ul {
   }
 }
 
+.news-area {
+  height: 500px;
+  width: 200px;
+  background-color: #d6e0f7;
+  margin-top: 25px;
+}
