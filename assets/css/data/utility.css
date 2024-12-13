@@ -12,3 +12,20 @@
 .flex {
   display: flex;
 }
+
+.space {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.alignment {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
