@@ -23,7 +23,7 @@ main {
 .overlay {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, #00000000, #a0c4ff7d);
+  background-image: linear-gradient(to top, #00000000, #a0c4ff81);
 }
 
 /*  login form */
@@ -66,10 +66,13 @@ form {
   border: none;
   background-color: rgba(128, 128, 128, 0.129);
   border-radius: 5px;
+  outline: none;
 }
 
-.email {
-  margin-bottom: 10px;
+.password-error, .email-error {
+  height: 18px;
+  margin: 5px 0;
+  color: #ff0000;
 }
 
 .remember-me-btn {
@@ -98,6 +101,7 @@ form {
   border: none;
   font-size: 14px;
   color: #000;
+  cursor: pointer;
 }
 
 .login {
@@ -107,5 +111,4 @@ form {
 .create-profile {
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.293);
-
 }
