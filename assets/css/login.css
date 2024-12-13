@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+@import url(./data/reset.css);
+@import url(./data/utility.css);
+
+main {
+  display: flex;
+  background-color: #fafafa;
+}
+
+.login-form-side, .picture-side {
+  height: 100vh;
+}
+
+/* Image login form*/
+.picture-side {
+  background-image: url(../img/login-page-picture.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+} 
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #00000000, #a0c4ff81);
+}
+
+/*  login form */
+.login-form-side {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-content {
+  width: min(100% - 10px, 550px);
+}
+
+.title-section {
+  h1 {
+    font-size: 45px;
+    font-weight: 540;
+    margin-bottom: 15px;
+  }
+
+  span {
+    color: var(--app-light-blue);
+    font-family: "Berkshire Swash", sans-serif;
+  }
+
+  p {
+    color: #767676;
+    font-size: 14px;
+  }
+}
+
+form {
+  margin: 75px 0 50px;
+}
+
+.email, .password {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.129);
+  border-radius: 5px;
+  outline: none;
+}
+
+.password-error, .email-error {
+  height: 18px;
+  margin: 5px 0;
+  color: #ff0000;
+}
+
+.remember-me-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.text-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.button-section {
+  display: flex;
+  gap: 15px;
+}
+
+.button-section a {
+  width: 200px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+}
+
+.login {
+  background-color: var(--app-light-blue);
+}
+
+.create-profile {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.293);
+}
