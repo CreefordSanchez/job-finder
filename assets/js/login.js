@@ -7,16 +7,16 @@ const email = select('.email');
 const password = select('.password');
 const emailError = select('.email-error');
 const passError = select('.password-error');
-export let formValid = false;
 
-sessionStorage.setItem('email','cree@gmail.com');
-sessionStorage.setItem('pass', '12345');
+sessionStorage.setItem('validForm', false);
+localStorage.setItem('email','cree@gmail.com');
+localStorage.setItem('pass', '12345');
 
 listen(loginBtn, 'click', () => {
-  if (validation()) {
-    reset();
+  if (validation()) { 
+  sessionStorage.setItem('validForm', true);
+    reset();    
     window.location.href = ('./index.html');
-    formValid = true;
   }
 });
 
@@ -51,8 +51,8 @@ function sufficiantData(email, pass) {
 }
 
 function compareCredentials(email, pass) {
-  let emailCredential = sessionStorage.getItem('email');
-  let passCredential = sessionStorage.getItem('pass');
+  let emailCredential = localStorage.getItem('email');
+  let passCredential = localStorage.getItem('pass');
 
   if (emailCredential !== email || passCredential !== pass) {
       emailError.innerText = 'Incorrect Email or Password';

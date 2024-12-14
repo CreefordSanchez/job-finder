@@ -1,10 +1,10 @@
 'use strict';
 
 import { listen, select, selectAll, style } from "./data/utility.js";
-import { formValid } from "./login.js";
 
 listen(window, 'load', () => {
-  if (!formValid) {    
+  let getValid = JSON.parse(sessionStorage.getItem('validForm'));
+  if (!getValid ) {        
     window.location.href = './login.html';
   }
 });
