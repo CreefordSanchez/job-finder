@@ -8,6 +8,7 @@ const password = select('.password');
 const emailError = select('.email-error');
 const passError = select('.password-error');
 export let formValid = false;
+
 sessionStorage.setItem('email','cree@gmail.com');
 sessionStorage.setItem('pass', '12345');
 

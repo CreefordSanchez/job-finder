@@ -5,7 +5,6 @@ function fetchContacts(count = 10, callback) {
       url: `https://randomuser.me/api/?results=${count}`,
       dataType: 'json',
       success: function (data) {
-          console.log("Fetched data:", data.results);
           callback(data.results);
       }
   });

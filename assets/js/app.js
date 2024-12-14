@@ -1,7 +1,7 @@
 'use strict';
 
 import { listen, select, selectAll, style } from "./data/utility.js";
-export { formValid } from "./login.js";
+import { formValid } from "./login.js";
 
 listen(window, 'load', () => {
   if (!formValid) {    
