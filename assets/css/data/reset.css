@@ -18,3 +18,7 @@ a, li {
   text-decoration: none;
   display: inline;
 }
+
+input, textarea {
+  outline: none;
+}
