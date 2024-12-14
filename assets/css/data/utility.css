@@ -2,6 +2,8 @@
 
 :root {
   --app-light-blue: #a0c5ff;
+  --app-white: #fff;
+  --app-gray: #767676;
 }
 
 .container {

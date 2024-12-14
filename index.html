@@ -19,10 +19,10 @@
           <h2><span>ProSphere</span></h2>
           <nav>
             <ul class="flex">
-              <li><button class="login">Logout</button></li>
-              <li><button class="filler">Feed</button></li>
-              <li><button class="filler">Posts</button></li>
-              <li><button class="filler">Help</button></li>
+              <li><a href="./login.html" class="login">Logout</a></li>
+              <li><a class="filler">Feed</a></li>
+              <li><a class="filler">Posts</a></li>
+              <li><a class="filler">Help</a></li>
             </ul>
           </nav>
         </div>
@@ -30,22 +30,36 @@
     </header>
     <main>
       <div class="container flex">
-        <div class="profile-area">
-          <div class="profile-area-head flex">
-            <img src="./assets/img/profile-image-default.png">
-            <h2>Welcome, Jeremiah Jeff!</h2>
+        <div class="left-side-tab">
+          <div class="profile section-box">
+            <div class="profile-banner"></div>
+            <div class="profile-pic">
+              <div class="pf-pic"></div>
+            </div>
+            <div class="profile-description">              
+              <h2>Jeremiah Jeff</h2>
+              <p>Software Developer</p>
+            </div>
           </div>
-          <div class="profile-area-text alignment text-center">
-            <p>You have no new mentions</p>
-            <p>Followers: 201,721</p>
-            <p>Following: 23</p>
-            <p>Posts: 12</p>
-            <p>Jobs listed: none</p>
-            <p>Jobs recieved: none</p>
-          </div>
-          <h2>People you may know</h2>
-          <div class="contacts">
+  
+          <div class="section-box news-section">     
+            <h2>News</h2>
+            <div class="news-list">
+              <div class="news">                  
+                <img src="./assets/img/news-image-frog.jpg">
+                <p>Does a connection with nature help with job listings?</p>
+              </div>
 
+              <div class="news">                  
+                <img src="./assets/img/news-image-money.jpg">
+                <p>What to do with your money: save, invest, or spend?</p>
+              </div>
+
+              <div class="news">                
+                <img src="./assets/img/news-image-car.png">
+                <p>On the road again: what to do with your previous job experience</p>
+              </div>
+            </div>       
           </div>
         </div>
         
@@ -78,20 +92,22 @@
               <img src="./assets/img/code.jpg">
           </div>
         </div>
-        <div class="news-area text-center">
-          <h2>News</h2>
-          <div class="news-section">
-            <img src="./assets/img/news-image-frog.jpg">
-            <p>Does a connection with nature help with job listings?</p>
 
-            <img src="./assets/img/news-image-money.jpg">
-            <p>What to do with your money: save, invest, or spend?</p>
+        <div class="right-side-tab section-box">
+          <h2>Contacts</h2>
+            <div class="contacts">
 
-            <img src="./assets/img/news-image-car.png">
-            <p>On the road again: what to do with your previous job experience</p>
-          </div>
+            </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="container">
+        <h2>ProSphere</h2>
+        <p>
+          &copy; 2024 All Rights Reserved. Terms of Use and Privacy Policy.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

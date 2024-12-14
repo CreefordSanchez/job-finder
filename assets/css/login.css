@@ -51,7 +51,7 @@ main {
   }
 
   p {
-    color: #767676;
+    color: var(--app-gray);
     font-size: 14px;
   }
 }
